@@ -3,7 +3,7 @@ LoadDistributions :
         Name : FlapWiseLoadBeaM1 ;
         AppliedTo : blade ;
         AlongCurve : curve_blade ;
-        AppliedForceAlongI1 : LoadingTable_F;
+        AppliedForceAlongI3 : LoadingTable_F;
         ScalingFactor : 1 ;
         TimeFunction : loads_schedule ;
         FollowerForceFlag : yes ;
