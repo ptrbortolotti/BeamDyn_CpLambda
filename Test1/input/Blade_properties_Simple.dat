@@ -6,16 +6,16 @@ BeamProperties :
       Name : prop_blade  ; 
       NumberOfTerms :  1  ;
        EtaValue :  0.0 ; : 
-         AxialStiffness : 3.04974000e+009 ; 
-         BendingStiffnesses : 3.04756000e+008 , 1.18456000e+009 , 0.00000000e+000 ;  
-         TorsionalStiffness :  6.56225000e+007 ;  
-         ShearingStiffnesses : 2.20012000e+008 , 1.35486000e+008, 0.00000000e+000 ;  
-         MassPerUnitSpan : 1.86770000e+002 ; 
-         MomentsOfInertia : 4.45368301e+001, 1.32347257e+001, 3.13021044e+001 ; 
+         AxialStiffness : 2.5000e+10 ; 
+         BendingStiffnesses : 5.2083e+08 , 1.3021e+08 , 0.00000000e+000 ;  
+         TorsionalStiffness :  1.4179e+08 ;  
+         ShearingStiffnesses : 7.8747e+09 , 8.2641e+09, 0.00000000e+000 ;  
+         MassPerUnitSpan : 975. ; 
+         MomentsOfInertia : 20.3125, 5.0781, 25.3906 ; 
          CenterOfMass :  0.0 , 0.0  ; 
          ShearCenter :   0.0 , 0.0  ; 
          Centroid :      0.0 , 0.0  ; 
-         #DampingCoefficient : 5.00000000e-003 ; 
+         DampingCoefficient : 1.0E-02 ; 
       ;
    ;
 ;

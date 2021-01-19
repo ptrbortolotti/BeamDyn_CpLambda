@@ -15,7 +15,6 @@ IncludeCommand :
      File : .\input\Blade_Simple.dat ;
      File : .\input\Blade_properties_Simple.dat ;
      File : .\input\Shape.dat ;
- 
      File : .\input\LoadFlapPositive.dat ;
      File : .\input\SensorsDeflections.dat ;
 ;
@@ -33,11 +32,6 @@ TimeFunctions :
      Time :  500 ;   FunctionValue : 1 ;
    ;
 ;
-
-# Gravity:
-#  GravityVector : 0 , -9.200 , 0 ;
-#     TimeFunction : gravity_schedule ;
-#  ;
 
 AnimationParameters:
   TimeStepSize : 1.0E+00;
@@ -65,8 +59,6 @@ MultibodyAnalysis:
     MaximumNumberOfIterations : 30 ;
     ConvergenceTolerance      : 1.0e-15 ;
     MaximumNumberOfTheseSteps : 10000;
- #    NumberOfEigenvalues       : 20 ;
-#     EigenproblemPrintFlag     : 1 ;
   ;
 ;
 

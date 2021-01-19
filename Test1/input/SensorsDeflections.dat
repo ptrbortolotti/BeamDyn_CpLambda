@@ -1,35 +1,5 @@
 Sensors :
     Sensor :
-        Name            : BladeRootLoads ;
-        Beam            : blade ;
-        Sensing         : Forces ;
-        InReferenceFrame: INERTIAL ;
-        EtaValue        : 0 ;
-    ;
-    Sensor :
-        Name            : BladeF1Displacement ;
-        Beam            : blade ;
-        Sensing         : Displacements ;
-        InReferenceFrame: INERTIAL ;
-        EtaValue        : 0.4444 ;              # 
-    ;
-    Sensor :
-        Name            : BladeF2Displacement ;
-        Beam            : blade ;
-        Sensing         : Displacements ;
-        InReferenceFrame: INERTIAL ;
-        EtaValue        : 0.8444 ;              # 
-    ;
-    Sensor :
-        Name            : BladeF3Displacement ;
-        Beam            : blade ;
-        Sensing         : Displacements ;
-        InReferenceFrame: INERTIAL ;
-        EtaValue        : 0.8888 ;              
-    ;
-    
-    
-    Sensor :
         Name            : BladeTipDisplacements ;
         Beam            : blade ;
         Sensing         : Displacements ;

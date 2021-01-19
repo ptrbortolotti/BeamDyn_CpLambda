@@ -6,7 +6,7 @@ Points :
    ;
   Point :
     Name : pt_blade_tip ;
-    Coordinates : 86.366 ,  0 ,  0 ; 
+    Coordinates : 10.0 ,  0 ,  0 ; 
     InReferenceFrame : blade_root_frame ; 
    ;
  ;    
