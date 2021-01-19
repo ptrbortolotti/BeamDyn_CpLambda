@@ -1,0 +1,11 @@
+FixedFrames : 
+
+  FixedFrame :  
+    Name : blade_root_frame ; 
+    Origin :  0 , 0 ,  0 ; 
+    YVector : 0 , 0 , -1 ; 
+    ZVector : 0 , 1 ,  0 ; 
+   ; 
+ 
+ ; 
+

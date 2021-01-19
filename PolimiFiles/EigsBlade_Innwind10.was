@@ -1,0 +1,94 @@
+ControlParameters:
+  File : .\BladeEigs\Eigs_Innwind10;
+  ModelInput        : yes; OutputLevel: 1;
+  ModelAssembly     : yes; OutputLevel: 1;
+  MultibodyAnalysis : yes; OutputLevel: 1;
+  PostProcessing    : yes; OutputLevel: 1;
+  Files4View        : yes;
+;
+
+
+ModelInput:
+
+IncludeCommand :
+     File : .\input\Fixed_frames.dat ;
+     File : .\input\Blade.dat ;
+     File : .\input\Blade_properties_Innwind10.dat ;
+     File : .\input\Shape.dat ;
+ ;
+
+TimeFunctions :                                        
+  TimeFunction :                                        
+    Name : gravity_schedule ;                                        
+    TimeFunctionType : User_Defined ;                                        
+    NumberOfTerms : 3 ;                                        
+    Time :   0 ;   FunctionValue : 0 ;                                        
+    Time :   3 ;   FunctionValue : 1 ;                                        
+    Time : 150 ;   FunctionValue : 1 ;                                        
+  ;                                        
+  TimeFunction :                                        
+    Name : control_rigid_rotation ;                                        
+    TimeFunctionType : User_Defined ;                                        
+    NumberOfTerms : 3 ;                                        
+    Time :   0 ;   FunctionValue : 0.0 ;                                        
+    Time :   3 ;   FunctionValue : 0.1 ;   # Modified by the regulation trajectory on: 30-Sep-2020 09:37:13 
+    Time :  10 ;   FunctionValue : 0.1 ;   # Modified by the regulation trajectory on: 30-Sep-2020 09:37:13 
+  ;                                        
+;
+
+                         
+RigidRotations :                            
+    RigidRotation :                            
+     Name : rigid_rotation ;                            
+     ConnectedTo :blade ;                            
+     Where : pt_blade_root ;                            
+     TimeFunction : control_rigid_rotation ;                            
+     AngularVelocity :  0 , 1 , 0 ;    # Modified by MATLAB on: 10-Dec-2020 15:41:51 
+     BodyList : blade  ;                             
+    ;                            
+;                            
+   
+Gravity:
+  GravityVector : -0 , 0 , -9.200 ;
+  TimeFunction : gravity_schedule ;
+ ;
+  
+AnimationParameters:
+  TimeStepSize : 1.0E+00;
+;
+
+;
+
+ModelAssembly:
+  ModelAssemblyParameters:
+    TypeOfAnalysis: static;
+  ;
+;
+
+MultibodyAnalysis:
+  SimulationControlParameters:
+    MaximumNumberOfTimeSteps  : 10000;
+    TimeRange                 : 0,5;
+    TimeStepSizeRange         : 1,1;
+    ReferenceEnergyValue      : 1e+7;
+  ;
+  InitialConditions:;
+  TimeStepControlParameters:
+    TimeStepSize              : 1 ;
+    FactorizationFrequency    : 1 ;
+    MaximumNumberOfIterations : 30 ;
+    ConvergenceTolerance      : 1.0e-9 ;
+    MaximumNumberOfTheseSteps : 4;
+  ;
+  TimeStepControlParameters:
+    TimeStepSize              : 1 ;
+    FactorizationFrequency    : 1 ;
+    MaximumNumberOfIterations : 30 ;
+    ConvergenceTolerance      : 1.0e-14 ;
+    MaximumNumberOfTheseSteps : 10000;
+    NumberOfEigenvalues       : 20 ;
+    EigenproblemPrintFlag     : 1 ;
+  ;
+;
+
+PostProcessing:;

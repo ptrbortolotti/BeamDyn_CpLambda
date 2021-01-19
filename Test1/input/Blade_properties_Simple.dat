@@ -1,0 +1,31 @@
+# WRITTEN BY MATLAB on 12-Jun-2014
+# update with correct z-shear centers
+
+BeamProperties : 
+   BeamProperty : 
+      Name : prop_blade  ; 
+      NumberOfTerms :  1  ;
+       EtaValue :  0.0 ; : 
+         AxialStiffness : 3.04974000e+009 ; 
+         BendingStiffnesses : 3.04756000e+008 , 1.18456000e+009 , 0.00000000e+000 ;  
+         TorsionalStiffness :  6.56225000e+007 ;  
+         ShearingStiffnesses : 2.20012000e+008 , 1.35486000e+008, 0.00000000e+000 ;  
+         MassPerUnitSpan : 1.86770000e+002 ; 
+         MomentsOfInertia : 4.45368301e+001, 1.32347257e+001, 3.13021044e+001 ; 
+         CenterOfMass :  0.0 , 0.0  ; 
+         ShearCenter :   0.0 , 0.0  ; 
+         Centroid :      0.0 , 0.0  ; 
+         #DampingCoefficient : 5.00000000e-003 ; 
+      ;
+   ;
+;
+
+
+
+CurveMeshParameters : 
+   CurveMeshParameter : 
+      Name : mesh_blade ; 
+      NumberOfElements :  50 ; 
+      OrderOfElements :   3 ; 
+   ; 
+; 

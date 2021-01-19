@@ -1,0 +1,46 @@
+Shapes :  
+ Shape : 
+    Name : shape_blade ; 
+    ShapeType : curve ; 
+    NumberOfTerms : 1 ; 
+    EtaValue : 0.0 ; :  
+    Curve : naca ; 
+    ScalingFactor : 6.0000 , 2.5000, 7.0000 ; 
+    Origin : 0.0000 , 0.0000, 0.0000 ; 
+    ; 
+   ; 
+;  
+
+Curves:  
+ Curve : 
+    Name : naca ; 
+    InReferenceFrame : blade_root_frame ; 
+    Points : 
+    NumberOfControlPoints : 5 ; 
+    DegreeOfCurve : 1  ; 
+    RationalCurveFlag : NO ; 
+    Coordinates: 0.00000 , 0.00000 , -1.24050  ; 
+    Coordinates: 0.00000 , 0.08700, -0.48080   ; 
+    Coordinates: 0.00000 , 0.00000, 0.00000   ; 
+    Coordinates: 0.00000 , -0.06700, -0.48080   ; 
+    Coordinates: 0.00000 , 0.00000, -1.24050   ; 
+   ; 
+  ; 
+;  
+# 
+# Curves:  
+#  Curve : 
+#     Name : naca ; 
+#     InReferenceFrame : blade_root_frame ; 
+#     Points : 
+#     NumberOfControlPoints : 5 ; 
+#     DegreeOfCurve : 1  ; 
+#     RationalCurveFlag : NO ; 
+#     Coordinates: 0.00000 , -1.24050 , 0.00000  ; 
+#     Coordinates: 0.00000 , -0.48080 , 0.08700  ; 
+#     Coordinates: 0.00000 , 0.00000 , 0.00000  ; 
+#     Coordinates: 0.00000 , -0.48080 , -0.06700  ; 
+#     Coordinates: 0.00000 , -1.24050 , 0.00000  ; 
+#    ; 
+#   ; 
+# ;  
