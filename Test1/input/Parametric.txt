@@ -1,0 +1,114 @@
+# PARAMETRIC number 1 
+BeginParametricString : 1 ;
+         ScalingFactor :  +1.00e+04  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 2 
+BeginParametricString : 1 ;
+         ScalingFactor :  +2.00e+04  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 3 
+BeginParametricString : 1 ;
+         ScalingFactor :  +4.00e+04  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 4 
+BeginParametricString : 1 ;
+         ScalingFactor :  +6.00e+04  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 5 
+BeginParametricString : 1 ;
+         ScalingFactor :  +8.00e+04  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 6 
+BeginParametricString : 1 ;
+         ScalingFactor :  +1.00e+05  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 7 
+BeginParametricString : 1 ;
+         ScalingFactor :  +2.00e+05  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 8 
+BeginParametricString : 1 ;
+         ScalingFactor :  +4.00e+05  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 9 
+BeginParametricString : 1 ;
+         ScalingFactor :  +6.00e+05  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 10 
+BeginParametricString : 1 ;
+         ScalingFactor :  +8.00e+05  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 11 
+BeginParametricString : 1 ;
+         ScalingFactor :  +1.00e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 12 
+BeginParametricString : 1 ;
+         ScalingFactor :  +1.50e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 13 
+BeginParametricString : 1 ;
+         ScalingFactor :  +2.00e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 14 
+BeginParametricString : 1 ;
+         ScalingFactor :  +2.50e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 15 
+BeginParametricString : 1 ;
+         ScalingFactor :  +3.00e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 16 
+BeginParametricString : 1 ;
+         ScalingFactor :  +4.00e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 17 
+BeginParametricString : 1 ;
+         ScalingFactor :  +6.00e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 18 
+BeginParametricString : 1 ;
+         ScalingFactor :  +8.00e+06  ;
+EndParametricString : 1 ;
+
+
+# PARAMETRIC number 19 
+BeginParametricString : 1 ;
+         ScalingFactor :  +1.00e+07  ;
+EndParametricString : 1 ;
+
+

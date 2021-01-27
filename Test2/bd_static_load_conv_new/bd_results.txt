@@ -1,0 +1,3 @@
+# SHA Id: d8127649dcff6090c0a666c55d88bbe4bfa082c4
+
+F 	           u_x(tip) 	             u_y(tip) 	        u_z(tip) 	           r_x(tip) 	           r_y(tip) 	           r_z(tip)

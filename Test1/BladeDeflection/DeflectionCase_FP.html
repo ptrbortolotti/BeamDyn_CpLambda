@@ -1,0 +1,1054 @@
+
+ <html>
+ <head>
+   <meta name='GENERATOR' content='WASP HTML'>
+   <title>index file</title>
+ </head>
+ <body bgcolor='#edc9b1'>
+
+ <p><center><a name='TOP_OF_FILE'>
+ <font color='#004000' size=+3>
+ Model Definition for analysis:
+ </font>
+ <font size=+3> { </font>
+ <font color='#ff0000' size=+3>
+ .\BladeDeflection\DeflectionCase_FP
+ </font>
+ <font size=+3>}</font>
+ </center></p>
+
+ <ul>
+ <li><a href='#Actuator_Elements'>Actuator Elements</a>.
+ <li><a href='#Aerodynamic_Elements'>Aerodynamic Elements</a>.
+ <li><a href='#Aerodynamic_Element_Properties'>Aerodynamic Element Properties</a>.
+ <li><a href='#Boundary_Conditions'>Boundary Conditions</a>.
+ <li><a href='#Constraint_Elements'>Constraint Elements</a>.
+ <li><a href='#Controller_Elements'>Controller Elements</a>.
+ <li><a href='#External_Loading'>External Loading</a>.
+ <li><a href='#Geometric_Elements'>Geometric Elements</a>.
+ <li><a href='#Utilities'>Utilities</a>.
+ <li><a href='#Sensor_Elements'>Sensor Elements</a>.
+ <li><a href='#Structural_Elements'>Structural Elements</a>.
+ <li><a href='#Structural_Element_Properties'>Structural Element Properties</a>.
+ </ul>
+
+ <p><center><hr>
+ <a name='Actuator_Elements'></a>
+ <font color="#ff0000">Actuator Elements</font>
+ <hr></center></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Aerodynamic_Elements'></a>
+ <font color="#ff0000">Aerodynamic Elements</font>
+ <hr></center></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Aerodynamic_Element_Properties'></a>
+ <font color="#ff0000">Aerodynamic Element Properties</font>
+ <hr></center></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Boundary_Conditions'></a>
+ <font color="#ff0000">Boundary Conditions</font>
+ <hr></center></p>
+
+ <p> BoundaryCondition {
+ <a href='#clamp'>clamp</a>}
+ <br></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Constraint_Elements'></a>
+ <font color="#ff0000">Constraint Elements</font>
+ <hr></center></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Controller_Elements'></a>
+ <font color="#ff0000">Controller Elements</font><hr></center></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='External_Loading'></a>
+ <font color="#ff0000">External Loading</font>
+ <hr></center></p>
+
+ <p> DeadLoad {
+ <a href='#applied_force'>applied_force</a>}
+ <br></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Geometric_Elements'></a>
+ <font color="#ff0000">Geometric Elements</font>
+ <hr></center></p>
+
+ <p> Curve {
+ <a href='#curve_blade'>curve_blade</a>, 
+ <a href='#naca'>naca</a>}
+ <br></p>
+
+ <p> FixedFrame {
+ <a href='#INERTIAL'>INERTIAL</a>, 
+ <a href='#blade_root_frame'>blade_root_frame</a>}
+ <br></p>
+
+ <p> CurveMeshParameter {
+ <a href='#mesh_blade'>mesh_blade</a>}
+ <br></p>
+
+ <p> Point {
+ <a href='#ORIGIN'>ORIGIN</a>, 
+ <a href='#pt_blade_root'>pt_blade_root</a>, 
+ <a href='#pt_blade_tip'>pt_blade_tip</a>}
+ <br></p>
+
+ <p> Shape {
+ <a href='#shape_blade'>shape_blade</a>}
+ <br></p>
+
+ <p> Triad {
+ <a href='#GLOBAL'>GLOBAL</a>, 
+ <a href='#triad_blade'>triad_blade</a>}
+ <br></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Utilities'></a>
+ <font color="#ff0000">Utilities</font>
+ <hr></center></p>
+
+ <p> TimeFunction {
+ <a href='#force_schedule'>force_schedule</a>}
+ <br></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Sensor_Elements'></a>
+ <font color="#ff0000">Sensor Elements</font>
+ <hr></center></p>
+
+ <p> Sensor {
+ <a href='#BladeDisplacements00'>BladeDisplacements00</a>, 
+ <a href='#BladeDisplacements01'>BladeDisplacements01</a>, 
+ <a href='#BladeDisplacements02'>BladeDisplacements02</a>, 
+ <a href='#BladeDisplacements03'>BladeDisplacements03</a>, 
+ <a href='#BladeDisplacements04'>BladeDisplacements04</a>, 
+ <a href='#BladeDisplacements05'>BladeDisplacements05</a>, 
+ <a href='#BladeDisplacements06'>BladeDisplacements06</a>, 
+ <a href='#BladeDisplacements07'>BladeDisplacements07</a>, 
+ <a href='#BladeDisplacements08'>BladeDisplacements08</a>, 
+ <a href='#BladeDisplacements09'>BladeDisplacements09</a>, 
+ <a href='#BladeDisplacements10'>BladeDisplacements10</a>}
+ <br></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Structural_Elements'></a>
+ <font color="#ff0000">Structural Elements</font>
+ <hr></center></p>
+
+ <p> Beam {
+ <a href='#blade'>blade</a>}
+ <br></p>
+
+ <p> RigidBody {
+ <a href='#rvj_pitch_controller'>rvj_pitch_controller</a>}
+ <br></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='Structural_Element_Properties'></a>
+ <font color="#ff0000">Structural Element Properties</font>
+ <hr></center></p>
+
+ <p> BeamProperty {
+ <a href='#prop_blade'>prop_blade</a>}
+ <br></p>
+ <p><center>
+ <a href='#TOP_OF_FILE'>Top of File</a>
+ </center></p>
+
+ <p><center><hr>
+ <a name='ORIGIN'></a>
+ <font color='#004000' SIZE=+1>
+ Points
+ </font>
+ <a href='#UM_POINT'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Point {
+ <font color="#ff0000">ORIGIN</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ AbsoluteCoordinates {   0.00000e+00,   0.00000e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='GLOBAL'></a>
+ <font color='#004000' SIZE=+1>
+ Triads
+ </font>
+ <a href='#UM_TRIAD'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Triad {
+ <font color="#ff0000">GLOBAL</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ XVector {   1.00000e+00,   0.00000e+00,   0.00000e+00}
+
+ <dd>
+ YVector {   0.00000e+00,   1.00000e+00,   0.00000e+00}
+
+ <dd>
+ ZVector {   0.00000e+00,   0.00000e+00,   1.00000e+00}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='INERTIAL'></a>
+ <font color='#004000' SIZE=+1>
+ FixedFrames
+ </font>
+ <a href='#UM_FXDFRAME'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ FixedFrame {
+ <font color="#ff0000">INERTIAL</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ Origin {   0.00000e+00,   0.00000e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+
+ <dd>
+ XVector {   1.00000e+00,   0.00000e+00,   0.00000e+00}
+
+ <dd>
+ YVector {   0.00000e+00,   1.00000e+00,   0.00000e+00}
+
+ <dd>
+ ZVector {   0.00000e+00,   0.00000e+00,   1.00000e+00}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='SHOWREQ'></a>
+ <font color='#004000' SIZE=+1>
+ AnimationParameters
+ </font>
+ <a href='#UM_SHOWREQ'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ ShowParameter {
+ <font color="#ff0000">SHOWREQ</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ TimeStepSize {   1.00000e+00}
+ <font color='#975820'>[sec]</font>
+
+ <dd>
+ EigenvectorsScalingFactor {   2.00000e-01}
+
+ <dd>
+ VectorFieldScalingFactor {   1.25000e-01}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='blade_root_frame'></a>
+ <font color='#004000' SIZE=+1>
+ FixedFrames
+ </font>
+ <a href='#UM_FXDFRAME'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ FixedFrame {
+ <font color="#ff0000">blade_root_frame</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ Origin {   0.00000e+00,   0.00000e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+
+ <dd>
+ XVector {   1.00000e+00,   0.00000e+00,   0.00000e+00}
+
+ <dd>
+ YVector {   0.00000e+00,   1.00000e+00,   0.00000e+00}
+
+ <dd>
+ ZVector {   0.00000e+00,   0.00000e+00,   1.00000e+00}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='pt_blade_root'></a>
+ <font color='#004000' SIZE=+1>
+ Points
+ </font>
+ <a href='#UM_POINT'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Point {
+ <font color="#ff0000">pt_blade_root</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ AbsoluteCoordinates {   0.00000e+00,   0.00000e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='pt_blade_tip'></a>
+ <font color='#004000' SIZE=+1>
+ Points
+ </font>
+ <a href='#UM_POINT'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Point {
+ <font color="#ff0000">pt_blade_tip</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ AbsoluteCoordinates {   1.00000e+01,   0.00000e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='blade'></a>
+ <font color='#004000' SIZE=+1>
+ Beams
+ </font>
+ <a href='#UM_BLD'> (User's Manual)</a>
+ <a href='#TM_BLD'> (Theory Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Beam {
+ <font color="#ff0000">blade</font>
+ } { 
+ </p>
+ <dl>
+ <dd> ConnectedTo {<a href='#rvj_pitch_controller'>rvj_pitch_controller</a>}
+ <dd> Where {<a href='#pt_blade_root'>pt_blade_root</a>}
+ <dd> ConnectedTo {<font color="#ff0000">null</font>}
+ <dd> Where {<a href='#pt_blade_tip'>pt_blade_tip</a>}
+ <dd> Curve {<a href='#curve_blade'>curve_blade</a>}
+ <dd> BeamProperty {<a href='#prop_blade'>prop_blade</a>}
+ <dd> Shape {<a href='#shape_blade'>shape_blade</a>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='curve_blade'></a>
+ <font color='#004000' SIZE=+1>
+ Curves
+ </font>
+ <a href='#UM_CURVE'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Curve {
+ <font color="#ff0000">curve_blade</font>
+ } { 
+ </p>
+ <dl>
+
+ <p>Points {</p>
+ <dl>
+
+ <dd>
+ NumberOfControlPoints {     2}
+
+ <dd>
+ DegreeOfCurve {     1}
+ <dd> EndPoint0 {<a href='#pt_blade_root'>pt_blade_root</a>}
+ <dd> EndPoint1 {<a href='#pt_blade_tip'>pt_blade_tip</a>}
+ </dl><p>
+ }
+
+ <p>KnotSequences {</p>
+ <dl>
+
+ <dd>
+ KnotSequence {   0.00000e+00,   0.00000e+00,   1.00000e+00,   1.00000e+00}
+ </dl><p>
+ }
+
+ <p>Triads {</p>
+ <dl>
+ <dd> Table {<font color='#808000'>curve_blade: Triads</font>}
+ <dd> TableXEntry {<font color='#808000'>Eta</font>}
+ <dd> TableType {<font color='#808000'>FINITE ROTATION</font>}
+
+ <dd>
+ EtaValue {   0.00000e+00}
+
+ <dd>
+ XVector {   1.00000e+00,   0.00000e+00,   0.00000e+00}
+
+ <dd>
+ YVector {   0.00000e+00,   1.00000e+00,   0.00000e+00}
+
+ <dd>
+ ZVector {   0.00000e+00,   0.00000e+00,   1.00000e+00}
+ </dl><p>
+ }
+ <dd> CurveMeshParameter {<a href='#mesh_blade'>mesh_blade</a>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='rvj_pitch_controller'></a>
+ <font color='#004000' SIZE=+1>
+ RigidBodies
+ </font>
+ <a href='#UM_RGB'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ RigidBody {
+ <font color="#ff0000">rvj_pitch_controller</font>
+ } { 
+ </p>
+ <dl>
+ <dd> ConnectedTo {<a href='#clamp'>clamp</a>}
+ <dd> Where {<a href='#pt_blade_root'>pt_blade_root</a>}
+ <dd> ConnectedTo {<a href='#blade'>blade</a>}
+ <dd> Where {<a href='#pt_blade_root'>pt_blade_root</a>}
+ <dd> Triad {<a href='#triad_blade'>triad_blade</a>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='triad_blade'></a>
+ <font color='#004000' SIZE=+1>
+ Triads
+ </font>
+ <a href='#UM_TRIAD'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Triad {
+ <font color="#ff0000">triad_blade</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ XVector {   1.00000e+00,   0.00000e+00,   0.00000e+00}
+
+ <dd>
+ YVector {   0.00000e+00,   1.00000e+00,   0.00000e+00}
+
+ <dd>
+ ZVector {   0.00000e+00,   0.00000e+00,   1.00000e+00}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='clamp'></a>
+ <font color='#004000' SIZE=+1>
+ BoundaryConditions
+ </font>
+ <a href='#UM_BC'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ BoundaryCondition {
+ <font color="#ff0000">clamp</font>
+ } { 
+ </p>
+ <dl>
+ <dd> AppliedTo {<a href='#rvj_pitch_controller'>rvj_pitch_controller</a>}
+ <dd> Where {<a href='#pt_blade_root'>pt_blade_root</a>}
+
+ <dd>
+ DisplacementBoundaryConditions {     1,     1,     1}
+
+ <dd>
+ RotationBoundaryConditions {     1,     1,     1}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='prop_blade'></a>
+ <font color='#004000' SIZE=+1>
+ BeamProperties
+ </font>
+ <a href='#UM_BLDPROP'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ BeamProperty {
+ <font color="#ff0000">prop_blade</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ NumberOfTerms {     1}
+
+ <dd>
+ EtaValue {   0.00000e+00}
+
+ <dd>     MassMatrix 
+ <dd>
+[   9.75000e+02,   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00,  -0.00000e+00]
+ <dd>
+[   0.00000e+00,   9.75000e+02,   0.00000e+00,  -0.00000e+00,   0.00000e+00,   0.00000e+00]
+ <dd>
+[   0.00000e+00,   0.00000e+00,   9.75000e+02,   0.00000e+00,   0.00000e+00,   0.00000e+00]
+ <dd>
+[   0.00000e+00,  -0.00000e+00,   0.00000e+00,   2.03125e+01,   0.00000e+00,   0.00000e+00]
+ <dd>
+[   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00,   3.38541e+00,  -0.00000e+00]
+ <dd>
+[  -0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00,  -0.00000e+00,   1.69271e+01]
+
+ <dd>     StiffnessMatrix 
+ <dd>
+[   2.50000e+10,   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00]
+ <dd>
+[   0.00000e+00,   7.87470e+09,   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00]
+ <dd>
+[   0.00000e+00,   0.00000e+00,   8.26410e+09,   0.00000e+00,   0.00000e+00,   0.00000e+00]
+ <dd>
+[   0.00000e+00,   0.00000e+00,   0.00000e+00,   1.41790e+08,   0.00000e+00,   0.00000e+00]
+ <dd>
+[   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00,   5.20830e+08,   0.00000e+00]
+ <dd>
+[   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00,   0.00000e+00,   1.30210e+08]
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='mesh_blade'></a>
+ <font color='#004000' SIZE=+1>
+ CurveMeshParameters
+ </font>
+ <a href='#UM_MESHCUR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ CurveMeshParameter {
+ <font color="#ff0000">mesh_blade</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ NumberOfElements {    50}
+
+ <dd>
+ OrderOfElements {     3}
+
+ <dd>
+ EtaValue {   0.00000e+00,   2.00000e-02,   4.00000e-02,   6.00000e-02,   8.00000e-02,   1.00000e-01,   1.20000e-01,   1.40000e-01,   1.60000e-01,   1.80000e-01,   2.00000e-01,   2.20000e-01,   2.40000e-01,   2.60000e-01,   2.80000e-01,   3.00000e-01,   3.20000e-01,   3.40000e-01,   3.60000e-01,   3.80000e-01,   4.00000e-01,   4.20000e-01,   4.40000e-01,   4.60000e-01,   4.80000e-01,   5.00000e-01,   5.20000e-01,   5.40000e-01,   5.60000e-01,   5.80000e-01,   6.00000e-01,   6.20000e-01,   6.40000e-01,   6.60000e-01,   6.80000e-01,   7.00000e-01,   7.20000e-01,   7.40000e-01,   7.60000e-01,   7.80000e-01,   8.00000e-01,   8.20000e-01,   8.40000e-01,   8.60000e-01,   8.80000e-01,   9.00000e-01,   9.20000e-01,   9.40000e-01,   9.60000e-01,   9.80000e-01,   1.00000e+00}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='shape_blade'></a>
+ <font color='#004000' SIZE=+1>
+ Shapes
+ </font>
+ <a href='#UM_SHAPE'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Shape {
+ <font color="#ff0000">shape_blade</font>
+ } { 
+ </p>
+ <dl>
+
+ <dd>
+ NumberOfTerms {     1}
+
+ <dd>
+ EtaValue {   0.00000e+00}
+ <dd> Curve {<a href='#naca'>naca</a>}
+
+ <dd>
+ ScalingFactor {   1.00000e+00,   1.00000e+00,   1.00000e+00}
+
+ <dd>
+ Origin {   0.00000e+00,  -3.10125e-01,   0.00000e+00}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='naca'></a>
+ <font color='#004000' SIZE=+1>
+ Curves
+ </font>
+ <a href='#UM_CURVE'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Curve {
+ <font color="#ff0000">naca</font>
+ } { 
+ </p>
+ <dl>
+
+ <p>Points {</p>
+ <dl>
+
+ <dd>
+ NumberOfControlPoints {     5}
+
+ <dd>
+ DegreeOfCurve {     1}
+
+ <dd>
+ AbsoluteCoordinates {   0.00000e+00,   1.24050e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+
+ <dd>
+ AbsoluteCoordinates {   0.00000e+00,   4.80800e-01,   8.70000e-02}
+ <font color='#975820'>[m]</font>
+
+ <dd>
+ AbsoluteCoordinates {   0.00000e+00,   0.00000e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+
+ <dd>
+ AbsoluteCoordinates {   0.00000e+00,   4.80800e-01,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+
+ <dd>
+ AbsoluteCoordinates {   0.00000e+00,   1.24050e+00,   0.00000e+00}
+ <font color='#975820'>[m]</font>
+ </dl><p>
+ }
+
+ <p>KnotSequences {</p>
+ <dl>
+
+ <dd>
+ KnotSequence {   0.00000e+00,   0.00000e+00,   2.50000e-01,   5.00000e-01,   7.50000e-01,   1.00000e+00,   1.00000e+00}
+ </dl><p>
+ }
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='applied_force'></a>
+ <font color='#004000' SIZE=+1>
+ DeadLoads
+ </font>
+ <a href='#UM_DEADLD'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ DeadLoad {
+ <font color="#ff0000">applied_force</font>
+ } { 
+ </p>
+ <dl>
+ <dd> AppliedTo {<a href='#blade'>blade</a>}
+ <dd> Where {<a href='#pt_blade_tip'>pt_blade_tip</a>}
+ <dd> TimeFunction {<a href='#force_schedule'>force_schedule</a>}
+
+ <dd>
+ ScalingFactor {   1.00000e+07}
+
+ <dd>
+ AppliedForces {   0.00000e+00,   0.00000e+00,  -1.00000e+00}
+ <font color='#975820'>[N]</font>
+
+ <dd>
+ AppliedMoments {   0.00000e+00,   0.00000e+00,   0.00000e+00}
+ <font color='#975820'>[N.m]</font>
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='force_schedule'></a>
+ <font color='#004000' SIZE=+1>
+ TimeFunctions
+ </font>
+ <a href='#UM_TIMFUN'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ TimeFunction {
+ <font color="#ff0000">force_schedule</font>
+ } { 
+ </p>
+ <dl>
+ <dd> TimeFunctionType {<font color='#808000'>USER_DEFINED</font>}
+ <dd> Table {<font color='#808000'>force_schedule</font>}
+ <dd> TableXEntry {<font color='#808000'>Time</font>}
+ <dd> XEntryUnits {<font color='#808000'>[sec]</font>}
+ <dd> TableType {<font color='#808000'>ORDERED</font>}
+
+ <dd>
+ XEntry {   0.00000e+00}
+
+ <dd>
+ TableCoefficients {   0.00000e+00}
+
+ <dd>
+ XEntry {   9.00000e+00}
+
+ <dd>
+ TableCoefficients {   0.00000e+00}
+
+ <dd>
+ XEntry {   1.90000e+01}
+
+ <dd>
+ TableCoefficients {   1.00000e+00}
+
+ <dd>
+ XEntry {   5.00000e+02}
+
+ <dd>
+ TableCoefficients {   1.00000e+00}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements00'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements00</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   0.00000e+00}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements01'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements01</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   1.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements02'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements02</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   2.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements03'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements03</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   3.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements04'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements04</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   4.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements05'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements05</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   5.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements06'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements06</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   6.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements07'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements07</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   7.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements08'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements08</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   8.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements09'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements09</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   9.00000e-01}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><center><hr>
+ <a name='BladeDisplacements10'></a>
+ <font color='#004000' SIZE=+1>
+ Sensors
+ </font>
+ <a href='#UM_SENSOR'> (User's Manual)</a>
+ <hr></center></p>
+
+ <p>
+ Sensor {
+ <font color="#ff0000">BladeDisplacements10</font>
+ } { 
+ </p>
+ <dl>
+ <dd> Body {<a href='#blade'>blade</a>}
+ <dd> RequestType {<font color='#808000'>DISPLACEMENTS</font>}
+
+ <dd>
+ EtaValue {   1.00000e+00}
+ <dd> ReferenceFrame {<font color='#808000'>INERTIAL</font>}
+ </dl><p>
+ }
+ <center><a href='#TOP_OF_FILE'>Top of File</a></center>
+
+ <p><HR ALIGN=LEFT></p>
+ </BODY>
+ </HTML>
