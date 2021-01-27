@@ -1,0 +1,81 @@
+Sensors :
+    Sensor :
+        Name            : BladeDisplacements00 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .0 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements01 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .1 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements02 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .2 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements03 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .3 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements04 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .4 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements05 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .5 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements06 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .6 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements07 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .7 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements08 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .8 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements09 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : .9 ;
+    ;
+    Sensor :
+        Name            : BladeDisplacements10 ;
+        Beam            : blade ;
+        Sensing         : Displacements ;
+        InReferenceFrame: INERTIAL ;
+        EtaValue        : 1 ;
+    ;
+
+;
+

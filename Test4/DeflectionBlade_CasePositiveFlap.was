@@ -6,7 +6,7 @@ ControlParameters:
   PostProcessing    : yes; OutputLevel: 1;
   Files4View        : yes;
   ParametricAnalysisParameters :
-    NumberOfParametricAnalyses : 9 ;
+    NumberOfParametricAnalyses : 5 ;
     File : .\input\Parametric.txt ;
   ;
 ;

@@ -1,0 +1,27 @@
+DeadLoads :
+   DeadLoad :
+       Name : applied_force ;
+       AppliedTo : blade ;
+       Where :      pt_blade_tip ;
+       TimeFunction : force_schedule ;
+       GoToParametricString :1;
+       # ScalingFactor :  1.e+7  ;
+       AppliedForces :  0 , 0 , -1 ;
+       AppliedMoments : 0 , 0 , 0 ;
+       #FollowerForceFlag : NO;
+    ;
+;
+
+TimeFunctions :
+   TimeFunction :
+     Name : force_schedule ;
+     TimeFunctionType : User_Defined ;
+     NumberOfTerms : 4 ;
+     Time :    0 ;   FunctionValue : 0 ;
+     Time :    9 ;   FunctionValue : 0 ;
+     Time :   19 ;   FunctionValue : 1 ;
+     Time :  500 ;   FunctionValue : 1 ;
+   ;
+;
+
+
