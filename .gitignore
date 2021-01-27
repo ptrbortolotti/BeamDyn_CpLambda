@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 
-.sum
-.ech
-.DS_Store
+*.sum
+*.ech
+*.DS_Store
