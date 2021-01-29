@@ -1,10 +1,10 @@
 ------- BEAMDYN Driver with OpenFAST INPUT FILE --------------------------------
 Dynamic analysis of rotating NREL 5MW blade under gravity force
 ---------------------- SIMULATION CONTROL --------------------------------------
-False          DynamicSolve  - Dynamic solve (false for static solve) (-)
+True          DynamicSolve  - Dynamic solve (false for static solve) (-)
           0   t_initial     - Starting time of simulation (s) [used only when DynamicSolve=TRUE]
          30   t_final       - Ending time of simulation   (s) [used only when DynamicSolve=TRUE]
-          1   dt            - Time increment size         (s) [used only when DynamicSolve=TRUE]
+       0.01   dt            - Time increment size         (s) [used only when DynamicSolve=TRUE]
 ---------------------- GRAVITY PARAMETER --------------------------------------
           0   Gx            - Component of gravity vector along X direction (m/s^2)
           0   Gy            - Component of gravity vector along Y direction (m/s^2)
