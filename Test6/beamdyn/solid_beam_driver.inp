@@ -8,7 +8,7 @@ True          DynamicSolve  - Dynamic solve (false for static solve) (-)
 ---------------------- GRAVITY PARAMETER --------------------------------------
           0   Gx            - Component of gravity vector along X direction (m/s^2)
           0   Gy            - Component of gravity vector along Y direction (m/s^2)
-      -9.81   Gz            - Component of gravity vector along Z direction (m/s^2)
+       -50.   Gz            - Component of gravity vector along Z direction (m/s^2)
 ---------------------- FRAME PARAMETER --------------------------------------
           0   GlbPos(1)     - Component of position vector of the reference blade frame along X direction (m)
           0   GlbPos(2)     - Component of position vector of the reference blade frame along Y direction (m)
