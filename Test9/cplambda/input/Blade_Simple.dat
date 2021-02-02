@@ -1,0 +1,80 @@
+Points : 
+  Point :
+    Name : pt_blade_root ;
+    Coordinates :  0 ,  0 ,  0 ; 
+    InReferenceFrame : blade_root_frame ; 
+   ;
+  Point :
+    Name : pt_blade_tip ;
+    Coordinates : 10.0 ,  0 ,  0 ; 
+    InReferenceFrame : blade_root_frame ; 
+   ;
+ ;    
+
+
+Beams : 
+   Beam :
+      Name : blade ; 
+      ConnectedTo : rvj_pitch_controller ; 
+      Where : pt_blade_root ; 
+      ConnectedTo : NULL; 
+      Where : pt_blade_tip ; 
+      Curve : curve_blade ; 
+      BeamProperty : prop_blade ; 
+      Shape : shape_blade ; 
+      ;
+ ;    
+
+
+Curves :
+ Curve : 
+    Name : curve_blade ; 
+       InReferenceFrame : blade_root_frame ; 
+       Points : 
+       NumberOfControlPoints : 2 ; 
+       DegreeOfCurve : 1 ; 
+       RationalCurveFlag : NO ; 
+       EndPoint0 : pt_blade_root ; 
+       EndPoint1 : pt_blade_tip ; 
+       ; 
+       Triads : 
+       NumberOfTerms : 1 ;
+       EtaValue : 0 ;       YVector : 0 , 1 , 0 ;         ZVector : 0 , 0 , 1 ; 
+    ;
+  CurveMeshParameter : mesh_blade ;
+  ;
+;
+
+RigidBodies :
+  RigidBody :
+   Name : rvj_pitch_controller;
+   ConnectedTo :clamp;
+   Where : pt_blade_root;       
+   ConnectedTo : blade;
+   Where : pt_blade_root;
+   Triad : triad_blade;
+ ;
+;
+
+Triads :
+   Triad :
+     Name : triad_blade ;
+     YVector :  0 ,  1 ,  0 ;
+     ZVector :  0 ,  0 ,  1 ;
+     InReferenceFrame : blade_root_frame ;
+   ;
+;
+
+BoundaryConditions :
+  BoundaryCondition :
+   Name : clamp ;
+   AppliedTo : rvj_pitch_controller;
+   Where : pt_blade_root ;     
+   DisplacementBoundaryConditions :  1 ,  1 ,  1 ;
+   RotationBoundaryConditions :  1 ,  1 ,  1 ;
+  ;
+;
+
+
+
+

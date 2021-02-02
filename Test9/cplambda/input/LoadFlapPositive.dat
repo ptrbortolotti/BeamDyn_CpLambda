@@ -1,0 +1,35 @@
+ LoadDistributions :
+     LoadDistribution :
+         Name : FlapWiseLoadBeaM1 ;
+         AppliedTo : blade ;
+         AlongCurve : curve_blade ;
+         AppliedForceAlongI3 : LoadingTable_F;
+         ScalingFactor : 1 ;
+         TimeFunction : loads_schedule ;
+         FollowerForceFlag : yes ;
+ 
+     ;
+ ;
+ 
+ LoadingTables :
+     LoadingTable :
+         Name : LoadingTable_F ;
+         NumberOfTerms : 1 ;
+         GoToParametricString :1;
+         ;
+ ;
+ 
+ 
+ TimeFunctions :
+    TimeFunction :
+      Name : loads_schedule ;
+      TimeFunctionType : User_Defined ;
+      NumberOfTerms : 4 ;
+      Time :    0 ;   FunctionValue : 0 ;
+      Time :    9 ;   FunctionValue : 0 ;
+      Time :   20 ;   FunctionValue : 1 ;
+      Time :  500 ;   FunctionValue : 1 ;
+    ;
+ ;
+ 
+ 
