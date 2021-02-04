@@ -132,3 +132,4 @@ dmypy.json
 *.sum
 *.ech
 *.DS_Store
+*.out
