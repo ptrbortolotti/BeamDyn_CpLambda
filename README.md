@@ -9,7 +9,7 @@ Test 2: Curved box beam - only diagonal terms - static tip load (BeamDyn vs HAWC
 
 Test 3: Straight box beam - some non-diagonal terms - static tip load (BeamDyn vs HAWC2 ok)
 
-Test 4: Straight box beam - full stiffness matrix - static tip load (BeamDyn vs HAWC2 ok)
+Test 4: Straight box beam - full stiffness matrix - static distributed load (BeamDyn vs HAWC2 ok)
 
 Test 5: Test 1 rotating around x with gravity starting at 0 azimuth (BeamDyn vs HAWC2 vs OpenFAST ok)
 
