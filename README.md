@@ -28,3 +28,5 @@ Test 12: BAR3 blade with prebend - BD 3 blades vs OpenFAST (Blade 1 ok, Blades 2
 Test 13: BAR3 without prebend - BD 3 blades vs OpenFAST (Blades 1/2/3 ok)
 
 Test 14: curved box beam from Test 2 rotating around x with gravity starting at 0/120/240 azimuth (BeamDyn vs OpenFAST ok)
+
+Test 15: test 14 with twist  (BeamDyn vs OpenFAST ok)
