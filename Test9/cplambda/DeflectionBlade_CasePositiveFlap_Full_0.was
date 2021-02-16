@@ -1,0 +1,85 @@
+ControlParameters:
+  File : .\BladeDeflectionFull\DeflectionCase_FP;
+  ModelInput        : yes; OutputLevel: 1;
+  ModelAssembly     : yes; OutputLevel: 1;
+  MultibodyAnalysis : yes; OutputLevel: 1;
+  PostProcessing    : yes; OutputLevel: 1;
+  Files4View        : yes;
+  ParametricAnalysisParameters :
+    NumberOfParametricAnalyses : 1 ;
+    File : .\input\Parametric.txt ;
+    ParametricAnalysisFirstNumber : 0 ;                                          
+  ;
+;
+
+
+ModelInput:
+
+IncludeCommand :
+     File : .\input\Fixed_frames.dat ;
+     File : .\input\Blade_PreBend.dat ;
+     File : .\input\Blade_properties_Full.dat ;
+     File : .\input\Shape.dat ;
+     File : .\input\LoadFlapPositive_0.dat ;
+     File : .\input\SensorsDeflections.dat ;
+;
+
+
+Gravity:
+  GravityVector : 0, 0 , 9.810 ;
+  TimeFunction : gravity_schedule ;
+;
+ 
+TimeFunctions :
+   TimeFunction :
+     Name : gravity_schedule ;
+     TimeFunctionType : User_Defined ;
+     NumberOfTerms : 4 ;
+     Time :    0 ;   FunctionValue : 0.0 ;
+     Time :    9 ;   FunctionValue : 0 ;
+     Time :   18 ;   FunctionValue : 0 ;
+     Time :  500 ;   FunctionValue : 0 ;
+   ;
+;
+
+AnimationParameters:
+  TimeStepSize : 1.0E+00;
+;
+
+;
+
+ModelAssembly:
+  ModelAssemblyParameters:
+    TypeOfAnalysis: static;
+  ;
+;
+
+MultibodyAnalysis:
+  SimulationControlParameters:
+    MaximumNumberOfTimeSteps  : 10000;
+    TimeRange                 : 0,19;
+    TimeStepSizeRange         : 1,1;
+    ReferenceEnergyValue      : 1e+7;
+  ;
+  InitialConditions:;
+
+  TimeStepControlParameters:
+    TimeStepSize              : 1 ;
+    FactorizationFrequency    : 1 ;
+    MaximumNumberOfIterations : 30 ;
+    ConvergenceTolerance      : 1.0e-1 ;
+    ArchivalFrequency         : 20 ;
+    MaximumNumberOfTheseSteps : 10;
+  ;
+  
+  TimeStepControlParameters:
+    TimeStepSize              : 1 ;
+    FactorizationFrequency    : 1 ;
+    MaximumNumberOfIterations : 30 ;
+    ConvergenceTolerance      : 1.0e-09 ;
+    ArchivalFrequency         : 20 ;
+    MaximumNumberOfTheseSteps : 10000;
+  ;
+;
+
+PostProcessing:;

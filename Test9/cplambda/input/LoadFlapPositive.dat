@@ -4,9 +4,9 @@
          AppliedTo : blade ;
          AlongCurve : curve_blade ;
          AppliedForceAlongI3 : LoadingTable_F;
-         ScalingFactor : 1 ;
+         ScalingFactor : -1 ;
          TimeFunction : loads_schedule ;
-         FollowerForceFlag : yes ;
+         FollowerForceFlag : no ;
  
      ;
  ;
@@ -14,7 +14,7 @@
  LoadingTables :
      LoadingTable :
          Name : LoadingTable_F ;
-         NumberOfTerms : 1 ;
+         NumberOfTerms : 2 ;
          GoToParametricString :1;
          ;
  ;
@@ -26,7 +26,7 @@
       TimeFunctionType : User_Defined ;
       NumberOfTerms : 4 ;
       Time :    0 ;   FunctionValue : 0 ;
-      Time :    9 ;   FunctionValue : 0 ;
+      Time :    9 ;   FunctionValue : 1 ;
       Time :   20 ;   FunctionValue : 1 ;
       Time :  500 ;   FunctionValue : 1 ;
     ;

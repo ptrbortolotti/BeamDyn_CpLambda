@@ -1,33 +1,33 @@
-# PARAMETRIC number 1 
+# PARAMETRIC number 1
 BeginParametricString : 1 ;
-        EtaValue : 0.0000 ;  Loading : -1.e+3 ; # N/m
-        EtaValue : 1.0000 ;  Loading : -1.e+3 ; # N/m
+        EtaValue : 0.0000 ;  Loading : 1.0e+3 ; # N/m
+        EtaValue : 1.0000 ;  Loading : 1.0e+3 ; # N/m
 EndParametricString : 1 ;
 
 
-# PARAMETRIC number 2 
+# PARAMETRIC number 2
 BeginParametricString : 1 ;
-        EtaValue : 0.0000 ;  Loading : -2.e+3 ; # N/m
-        EtaValue : 1.0000 ;  Loading : -2.e+3 ; # N/m
+        EtaValue : 0.0000 ;  Loading : 2.0e+3 ; # N/m
+        EtaValue : 1.0000 ;  Loading : 2.0e+3 ; # N/m
 EndParametricString : 1 ;
 
 
-# PARAMETRIC number 3 
+# PARAMETRIC number 3
 BeginParametricString : 1 ;
-        EtaValue : 0.0000 ;  Loading : -3.e+3 ; # N/m
-        EtaValue : 1.0000 ;  Loading : -3.e+3 ; # N/m
+        EtaValue : 0.0000 ;  Loading : 3.0e+3 ; # N/m
+        EtaValue : 1.0000 ;  Loading : 3.0e+3 ; # N/m
 EndParametricString : 1 ;
 
 
-# PARAMETRIC number 4 
+# PARAMETRIC number 4
 BeginParametricString : 1 ;
-        EtaValue : 0.0000 ;  Loading : -4.e+3 ; # N/m
-        EtaValue : 1.0000 ;  Loading : -4.e+3 ; # N/m
+        EtaValue : 0.0000 ;  Loading : 4.0e+3 ; # N/m
+        EtaValue : 1.0000 ;  Loading : 4.0e+3 ; # N/m
 EndParametricString : 1 ;
 
 
-# PARAMETRIC number 5 
+# PARAMETRIC number 5
 BeginParametricString : 1 ;
-        EtaValue : 0.0000 ;  Loading : -5.e+3 ; # N/m
-        EtaValue : 1.0000 ;  Loading : -5.e+3 ; # N/m
+        EtaValue : 0.0000 ;  Loading : 5.0e+3 ; # N/m
+        EtaValue : 1.0000 ;  Loading : 5.0e+3 ; # N/m
 EndParametricString : 1 ;
