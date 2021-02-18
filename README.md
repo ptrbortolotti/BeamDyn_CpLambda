@@ -34,3 +34,5 @@ Test 15: test 14 with non-linear twist and prebend=sweep (Blade 1 ok, Blades 2/3
 Test 16: test 15 with stiffness and inertia matrices from Test 12 (BeamDyn vs OpenFAST ok)
 
 Test 17: Test 12 with cubic twist and order_elem=5 (Blade 1 ok, Blades 2/3 fail). Increasing order_elem decreases the error, which disappears for linear twist
+
+Test 18: Test 17 with no gravity
