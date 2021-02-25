@@ -4,11 +4,11 @@ Dynamic analysis of rotating NREL 5MW blade under gravity force
 True          DynamicSolve  - Dynamic solve (false for static solve) (-)
           0   t_initial     - Starting time of simulation (s) [used only when DynamicSolve=TRUE]
          30   t_final       - Ending time of simulation   (s) [used only when DynamicSolve=TRUE]
-       0.0002  dt            - Time increment size         (s) [used only when DynamicSolve=TRUE]
+       0.0004 dt            - Time increment size         (s) [used only when DynamicSolve=TRUE]
 ---------------------- GRAVITY PARAMETER --------------------------------------
           0   Gx            - Component of gravity vector along X direction (m/s^2)
           0   Gy            - Component of gravity vector along Y direction (m/s^2)
-       -50  Gz            - Component of gravity vector along Z direction (m/s^2)
+       -9.81  Gz            - Component of gravity vector along Z direction (m/s^2)
 ---------------------- FRAME PARAMETER --------------------------------------
           0   GlbPos(1)     - Component of position vector of the reference blade frame along X direction (m)
           0   GlbPos(2)     - Component of position vector of the reference blade frame along Y direction (m)
@@ -40,4 +40,4 @@ False               GlbRotBladeT0 - Reference orientation for BeamDyn calculatio
 Non-dim blade-span eta   Fx          Fy            Fz           Mx           My           Mz
 (-)                      (N)         (N)           (N)          (N-m)        (N-m)        (N-m)
 ---------------------- PRIMARY INPUT FILE --------------------------------------
-"solid_beam_BeamDyn.dat"    InputFile - Name of the primary BeamDyn input file
+"BAR3_BeamDyn.dat"    InputFile - Name of the primary BeamDyn input file

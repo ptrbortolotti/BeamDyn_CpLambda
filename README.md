@@ -29,10 +29,12 @@ Test 13: BAR3 without prebend - BD 3 blades vs OpenFAST (Blades 1/2/3 ok)
 
 Test 14: curved box beam from Test 2 rotating around x with gravity starting at 0/120/240 azimuth (BeamDyn vs OpenFAST ok)
 
-Test 15: test 14 with non-linear twist and prebend=sweep (Blade 1 ok, Blades 2/3 fail!!)
+Test 15: test 14 with non-linear twist and prebend=sweep (Blade 1 ok, Blades 2/3 minor mismatch)
 
 Test 16: test 15 with stiffness and inertia matrices from Test 12 (BeamDyn vs OpenFAST ok)
 
 Test 17: Test 12 with cubic twist and order_elem=5 (Blade 1 ok, Blades 2/3 fail). Increasing order_elem decreases the error, which disappears for linear twist
 
-Test 18: Test 17 with no gravity
+Test 18: Test 17 with no gravity (Blades in OpenFAST are all identical, BD driver returns a phase shift)
+
+Test 19: Test 17 with linear twist (Blade 1 ok, Blades 2/3 minor mismatch)
