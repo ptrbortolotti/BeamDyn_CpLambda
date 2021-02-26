@@ -23,7 +23,7 @@ Test 9: Composite curved beam - distributed load (not yet verified)
 
 Test 10: Test 4 rotating around x with gravity starting at 0 azimuth (BeamDyn vs HAWC2 vs OpenFAST ok)
 
-Test 12: BAR3 blade with prebend - BD 3 blades vs OpenFAST (Blade 1 ok, Blades 2/3 fail)
+Test 12: BAR3 blade with prebend no hub radius - BD 3 blades vs OpenFAST (Blades 1/2/3 ok)
 
 Test 13: BAR3 without prebend - BD 3 blades vs OpenFAST (Blades 1/2/3 ok)
 
@@ -33,8 +33,8 @@ Test 15: test 14 with non-linear twist and prebend=sweep (Blade 1 ok, Blades 2/3
 
 Test 16: test 15 with stiffness and inertia matrices from Test 12 (BeamDyn vs OpenFAST ok)
 
-Test 17: Test 12 with cubic twist and order_elem=5 (Blade 1 ok, Blades 2/3 fail). Increasing order_elem decreases the error, which disappears for linear twist
+Test 17: Test 12 with cubic twist and order_elem=5 (Blades 1/2/3 ok)
 
 Test 18: Test 17 with no gravity (Blades in OpenFAST are all identical, BD driver returns a phase shift)
 
-Test 19: Test 17 with linear twist (Blade 1 ok, Blades 2/3 minor mismatch)
+Test 19: Test 17 with linear twist (Blades 1/2/3 ok)
