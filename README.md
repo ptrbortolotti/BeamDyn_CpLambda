@@ -38,3 +38,7 @@ Test 17: Test 12 with cubic twist and order_elem=5 (Blades 1/2/3 ok)
 Test 18: Test 17 with no gravity (Blades in OpenFAST are all identical, BD driver returns a phase shift)
 
 Test 19: Test 17 with linear twist (Blades 1/2/3 ok)
+
+Test 20: Test 12 with cone (Blades 1/2/3 ok)
+
+Test 21: Test 12 with hub radius (Blades 1 ok, blades 2/3 fail)
