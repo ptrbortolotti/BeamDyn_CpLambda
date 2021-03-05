@@ -3,7 +3,7 @@ Dynamic analysis of rotating NREL 5MW blade under gravity force
 ---------------------- SIMULATION CONTROL --------------------------------------
 True          DynamicSolve  - Dynamic solve (false for static solve) (-)
           0   t_initial     - Starting time of simulation (s) [used only when DynamicSolve=TRUE]
-         30   t_final       - Ending time of simulation   (s) [used only when DynamicSolve=TRUE]
+          5   t_final       - Ending time of simulation   (s) [used only when DynamicSolve=TRUE]
        0.01 dt            - Time increment size         (s) [used only when DynamicSolve=TRUE]
 ---------------------- GRAVITY PARAMETER --------------------------------------
           0   Gx            - Component of gravity vector along X direction (m/s^2)
@@ -18,7 +18,7 @@ True          DynamicSolve  - Dynamic solve (false for static solve) (-)
        1.00000E+00       0.00000E+00       0.00000E+00
        0.00000E+00       1.00000E+00       0.00000E+00
        0.00000E+00       0.00000E+00       1.00000E+00
-False               GlbRotBladeT0 - Reference orientation for BeamDyn calculations is aligned with initial blade root
+True GlbRotBladeT0 - Reference orientation for BeamDyn calculations is aligned with initial blade root
 ---------------------- ROOT VELOCITY PARAMETER ----------------------------------
         0.5   RootVel(4)     - Component of angular velocity vector of the beam root about X axis (rad/s)
           0   RootVel(5)     - Component of angular velocity vector of the beam root about Y axis (rad/s)
