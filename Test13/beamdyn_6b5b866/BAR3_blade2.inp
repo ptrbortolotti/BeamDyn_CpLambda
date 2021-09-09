@@ -3,8 +3,8 @@ Dynamic analysis of rotating NREL 5MW blade under gravity force
 ---------------------- SIMULATION CONTROL --------------------------------------
 True          DynamicSolve  - Dynamic solve (false for static solve) (-)
           0   t_initial     - Starting time of simulation (s) [used only when DynamicSolve=TRUE]
-         30   t_final       - Ending time of simulation   (s) [used only when DynamicSolve=TRUE]
-       0.0004 dt            - Time increment size         (s) [used only when DynamicSolve=TRUE]
+         70   t_final       - Ending time of simulation   (s) [used only when DynamicSolve=TRUE]
+       0.01  dt            - Time increment size         (s) [used only when DynamicSolve=TRUE]
 ---------------------- GRAVITY PARAMETER --------------------------------------
           0   Gx            - Component of gravity vector along X direction (m/s^2)
           0   Gy            - Component of gravity vector along Y direction (m/s^2)
@@ -12,13 +12,13 @@ True          DynamicSolve  - Dynamic solve (false for static solve) (-)
 ---------------------- FRAME PARAMETER --------------------------------------
           0   GlbPos(1)     - Component of position vector of the reference blade frame along X direction (m)
           0   GlbPos(2)     - Component of position vector of the reference blade frame along Y direction (m)
-          0   GlbPos(3)     - Component of position vector of the reference blade frame along Z direction (m)
+          1   GlbPos(3)     - Component of position vector of the reference blade frame along Z direction (m)
 ---The following 3 by 3 matrix is the direction cosine matrix ,GlbDCM(3,3),
 ---relates global frame to the initial blade root frame
        1.00000E+00      -0.00000E+00       0.00000E+00
-       0.00000E+00      -5.00000E-01      -0.8660254037844388
-       0.00000E+00      0.8660254037844388      -5.00000E-01
-True               GlbRotBladeT0 - Reference orientation for BeamDyn calculations is aligned with initial blade root
+       0.00000E+00      -5.00000E-01       0.8660254037844388
+       0.00000E+00      -0.8660254037844388      -5.00000E-01
+False               GlbRotBladeT0 - Reference orientation for BeamDyn calculations is aligned with initial blade root
 ---------------------- ROOT VELOCITY PARAMETER ----------------------------------
         0.5   RootVel(4)     - Component of angular velocity vector of the beam root about X axis (rad/s)
           0   RootVel(5)     - Component of angular velocity vector of the beam root about Y axis (rad/s)

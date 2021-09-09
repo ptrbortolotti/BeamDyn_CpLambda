@@ -41,4 +41,15 @@ Test 19: Test 17 with linear twist (Blades 1/2/3 ok)
 
 Test 20: Test 12 with cone (Blades 1/2/3 ok)
 
-Test 21: Test 12 with hub radius (Blades 1 ok, blades 2/3 fail)
+Test 21: Test 12 with hub radius (Blades 1/2/3 ok)
+
+
+# Debug commits 6b5b866 vs 6abb5cc
+Test 1 ok
+Test 9 ok
+Test 10 ok
+Test 12 fails
+Test 13, 14 and 15 return an almost perfect match
+Test 16 fails
+Test 17 fails
+Test 20, 21 fails
