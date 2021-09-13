@@ -43,6 +43,8 @@ Test 20: Test 12 with cone (Blades 1/2/3 ok)
 
 Test 21: Test 12 with hub radius (Blades 1/2/3 ok)
 
+Test 22: Test 12 with IEA15, OF commits 6b5b866 and 6abb5cc return different results. HAWC2 verifiication needed.
+
 
 # Debug commits 6b5b866 vs 6abb5cc
 Test 1 ok
